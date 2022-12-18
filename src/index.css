@@ -1,13 +1,426 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+ margin: 0 0 0 0;
+ font-family: 'Roboto';
+ background-color: #EDEDEE;
+}
+
+
+.headerDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 50px;
+}
+
+.logo{
+  height: 55px;
+  margin-right: 500px;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.headerDiv > button{
+  height: 30px;
+  margin-left: 500px;
+}
+
+.mainSectionDiv{
+  display: flex;
+  justify-content: center;
+}
+
+.mainItems{
+  margin-bottom: 50px;
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 25px;
+}
+
+.buyButton{
+  height: 30px;
+  background-color: #019F48;
+  border-radius: 10px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.buyButton:hover {
+  background-color: #39e75f;
+  cursor: pointer;
+}
+
+.buyText{
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  border-radius: 10px;
+  outline: 0;
+  border-width: 1px;
+  border-color: black;
+  font-family: 'Roboto';
+  font-size: 18px;
+  text-align: center;
+}
+
+.buyThings{
+  display: flex;
+  align-items: center;
+}
+
+.buyThings > p{
+  margin-right: 10px;
+}
+
+.buyImage{
+  height: 20px;
+}
+
+.cartButton{
+  height: 30px;
+  background-color: grey;
+  border-radius: 10px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+  color: white;
+  font-weight: 500;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  
+}
+
+.cartButton > img {
+  margin-left: 10px;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.cartButton:hover{
+  background-color: #8e8e8e;
+  cursor: pointer;
+  
+}
+
+.cartQuantity{
+  font-weight: 500;
+  padding-right: 50px;
+}
+
+.cartPrice{
+  font-weight: 500;
+  padding-right: 20px;
+}
+
+.cartOptions{
+  margin-left: 900px;
+  position: absolute;
+  width: 300px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.mainCartItems{
+  margin-bottom: 50px;
+  background-color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 500px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 25px;
+}
+
+.CartDiv{
+  display: flex;
+  justify-content: center;
+}
+
+.paymentButton{
+  color: white;
+  font-weight: 500;
+  height: 30px;
+  background-color: #019F48;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  margin-bottom: 40px;
+  
+}
+
+.paymentButton:hover {
+  background-color: #39e75f;
+  cursor: pointer;
+}
+
+.couponDiv{
+  display: flex;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.costDiv{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.costMainDiv{
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.costDiv > p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.couponText{
+  width: 150px;
+  outline: 0;
+  border-width: 0px 0px 1px 0px ;
+  border-color: black;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.couponButton {
+  height: 25px;
+  background-color: grey;
+  border-radius: 10px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+  color: white;
+  font-weight: 400;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.couponButton:hover {
+  background-color: #8e8e8e;
+  cursor: pointer;
+}
+
+.removeButton{
+  height: 30px;
+  background-color: #ed3419;
+  border-radius: 10px;
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.removeButton:hover {
+  background-color: #ff4122;
+  cursor: pointer;
+}
+
+.paymentDiv{
+  width: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 25px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.paymentItems{
+  width: 400px;
+}
+
+.cardSmall{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  margin-bottom: 40px;
+}
+
+.creditCard{
+  height: 40px;
+  width: 400px;
+  outline: 0;
+  border-width: 1px 1px 1px 1px ;
+  border-radius: 5px;
+  border-color: black;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.nameOnCard{
+  height: 40px;
+  width: 400px;
+  outline: 0;
+  border-width: 1px 1px 1px 1px ;
+  border-radius: 5px;
+  border-color: black;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.expCard{
+  width: 190px;
+  height: 40px;
+  outline: 0;
+  border-width: 1px 1px 1px 1px ;
+  border-radius: 5px;
+  border-color: black;
+  font-family: 'Roboto';
+  font-size: 18px;
+  margin-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.securityCard{
+  width: 190px;
+  height: 40px;
+  outline: 0;
+  border-width: 1px 1px 1px 1px ;
+  border-radius: 5px;
+  border-color: black;
+  font-family: 'Roboto';
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.confirmButton{
+  color: white;
+  font-weight: 500;
+  height: 40px;
+  background-color: #019F48;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  
+}
+
+.returnButton{
+  color: white;
+  font-weight: 500;
+  height: 40px;
+  background-color: grey;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid black;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.returnButton:hover{
+    background-color: #8e8e8e;
+    cursor: pointer;
+  
+}
+
+.confirmButton:hover {
+  background-color: #39e75f;
+  cursor: pointer;
+}
+
+.error{
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: #ed3419;
+}
+
+.errorLast{
+  color: #ed3419;
+  margin-bottom: -20px;
 }
