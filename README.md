@@ -1,7 +1,7 @@
 # Run the project locally
 
-Clone the GitHub repo on your PC. Delete the "package-lock.json" file and from your terminal run "npm install". 
-When that's done run "npm start".
+Clone the GitHub repo to your PC. Delete the "package-lock.json" file and in your terminal run "npm install" from the root folder of the project. 
+When that's done run "npm start" and the application should start, listening to port 3000.
 
 # Getting Started with Create React App
 
