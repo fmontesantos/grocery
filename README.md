@@ -1,3 +1,8 @@
+# Run the project locally
+
+Clone the GitHub repo on your PC. Delete the "package-lock.json" file and from your terminal run "npm install". 
+When that's done run "npm start".
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
